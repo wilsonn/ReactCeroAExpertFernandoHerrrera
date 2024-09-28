@@ -1,0 +1,11 @@
+https://vitejs.dev/guide/
+npm create vite@latest
+npm install
+npm run dev
+
+https://create-react-app.dev/docs/getting-started
+npx create-react-app my-app
+npm start
+npm run build
+npm test
+npm run eject (comando avanzado)
