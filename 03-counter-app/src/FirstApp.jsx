@@ -5,9 +5,7 @@ const newMessage = {
   title: 'Fernando'
 };
 
-const suma = (a, b) => {return a + b};
-
-export const FirstApp = ( { title, subtitle} ) => {
+export const FirstApp = ( { title, subtitle, name } ) => {
   //console.log(props);
 
   return (
@@ -15,10 +13,19 @@ export const FirstApp = ( { title, subtitle} ) => {
       <h1>{ title }</h1>
       <code>{ JSON.stringify(newMessage) }</code>
       <p>{subtitle}</p>
+      <p>{name}</p>
     </>
   );
 }
 
 FirstApp.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.number.isRequired,
+  name: PropTypes.string
+}
+
+FirstApp.defaultProps = {
+  title: "No hay titulo",
+  subtitle: "No hay subtitulo",
+  name: "Fernando Herrera"
 }
