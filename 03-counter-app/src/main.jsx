@@ -1,10 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React  from "react";
+import ReactDOM from "react-dom/client";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+import { HelloWorldApp } from "./HelloWorldApp"
+import { FirstApp } from "./FirstApp";
+
+import './styles.css';
+
+ReactDOM.createRoot( document.getElementById('root') ).render(
+    <React.StrictMode>
+        <FirstApp title={123} subtitle="Estoy aprendiendo React"/>
+    </React.StrictMode>
+);
