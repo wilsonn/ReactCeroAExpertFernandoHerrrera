@@ -12,3 +12,18 @@ npm run eject (comando avanzado)
 
 
 rafc => genera estructura de un componente
+
+https://jestjs.io/docs/getting-started
+npm install --save-dev jest
+En script de package.json => "test": "jest"
+                             "test": "jest --watchAll" (monitoreo)
+npm run test
+npm add -D @types/jest
+npm install --save-dev @testing-library/react
+
+
+
+https://testing-library.com/docs/react-testing-library/intro
+npm install --save-dev @testing-library/react @testing-library/dom
+
+Snapshop => utilizado para tomar una foto a un componente y para actualizar presionar 'u'
