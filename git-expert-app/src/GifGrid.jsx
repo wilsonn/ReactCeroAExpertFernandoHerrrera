@@ -1,17 +1,18 @@
-const GifGrid = ( { category }) => {
-  
-    const gifs = [1,2,3,4,5];
+import PropTypes from "prop-types";
+import { getGifs } from "./helpers/getGifs";
+
+const GifGrid = ({ category }) => {
+  getGifs(category);
 
   return (
     <>
-      <h3> { category } </h3>
-      {
-        gifs.map( gif => (
-            <p> { gif } </p>
-        ))
-      }
+      <h3> {category} </h3>
     </>
-  )
-}
+  );
+};
 
-export default GifGrid
+GifGrid.propTypes = {
+  category: PropTypes.string.isRequired,
+};
+
+export default GifGrid;
