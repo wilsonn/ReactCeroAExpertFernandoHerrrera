@@ -1,6 +1,5 @@
 import { useState } from "react";
-import AddCategory from "./AddCategory";
-import GifGrid from "./GifGrid";
+import { AddCategory, GifGrid } from "./components";
 
 const GitExpertApp = () => {
   const [categories, setCategories] = useState(["One Punch"]);

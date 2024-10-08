@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-const AddCategory = ({ onNewCategory }) => {
+export const AddCategory = ({ onNewCategory }) => {
   const [inputValue, setInputValue] = useState("");
 
   const onInputChange = ({ target }) => {
@@ -30,5 +30,3 @@ const AddCategory = ({ onNewCategory }) => {
 AddCategory.propTypes = {
   onNewCategory: PropTypes.func.isRequired,
 };
-
-export default AddCategory;
