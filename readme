@@ -27,3 +27,12 @@ https://testing-library.com/docs/react-testing-library/intro
 npm install --save-dev @testing-library/react @testing-library/dom
 
 Snapshop => utilizado para tomar una foto a un componente y para actualizar presionar 'u'
+
+Opcion despliegue pro free
+https://www.netlify.com/
+
+Github Pages:
+- Crear el repositorio
+- Crear el build (npm run build)
+- Renombre el dist como docs y subir al repositorio.
+- En github ir a settings - pages - seleccionar la rama y la carpeta docs.
